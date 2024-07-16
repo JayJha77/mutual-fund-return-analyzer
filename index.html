@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutual Fund Return Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Mutual Fund Return Calculator</h1>
+        <form id="mf-form" class="mt-4">
+            <div class="form-group">
+                <label for="investmentType">Investment Type:</label>
+                <select class="form-control" id="investmentType">
+                    <option value="sip">Monthly SIP</option>
+                    <option value="lumpsum">Lumpsum</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="investmentAmount">Investment Amount (₹):</label>
+                <input type="number" class="form-control" id="investmentAmount" required>
+            </div>
+            <div class="form-group">
+                <label for="years">For a period of (years):</label>
+                <input type="number" class="form-control" id="years" required>
+            </div>
+            <div class="form-group">
+                <label for="strategy">My Investment Strategy:</label>
+                <select class="form-control" id="strategy">
+                    <option value="conservative">Conservative (8% returns)</option>
+                    <option value="moderate">Moderate (10% returns)</option>
+                    <option value="aggressive">Aggressive (12% returns)</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Calculate</button>
+        </form>
+        <div id="results" class="mt-4">
+            <h2 class="text-center">Results</h2>
+            <p>Total Value: ₹<span id="totalValue"></span></p>
+            <p>Total Contributions: ₹<span id="totalContributions"></span></p>
+            <p>Total Returns: ₹<span id="totalReturns"></span></p>
+        </div>
+        <canvas id="myChart" class="mt-4"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
