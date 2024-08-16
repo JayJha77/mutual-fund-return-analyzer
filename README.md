@@ -1,15 +1,17 @@
 Mutual Fund Return Analyzer
+
 Overview
 1.A web-based tool to analyze mutual fund returns over specified periods.
 2.Provides interactive charts and data export options.
+
 Features
 1.Analyze historical returns of mutual fund schemes.
 2.Customizable date range for analysis.
 3.Interactive visualizations of mutual fund performance.
 4.Export results for offline review.
 ## Demo
-[Link to Live Demo](https://jayjha77.github.io/mutual-fund-return-analyzer/)
-Getting Started
+Getting Started [Link to Live Demo](https://jayjha77.github.io/mutual-fund-return-analyzer/)
+
 1. Clone the Repository
 Copy code
 git clone https://github.com/your-username/mutual-fund-return-analyzer.git
